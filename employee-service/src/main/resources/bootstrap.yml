@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: employee-service
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+
+server:
+  port: 8080
